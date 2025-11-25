@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">In this project, I specifically used AI models to build a Tic Tac Toe version based on my own ideas. Step by step, following specific instructions. 
+<p align="left">For this project, I used AI models to create a version of the game Tic Tac Toe. I instructed the AI step by step on how to write the code. I was then able to make adjustments and implement the project according to my ideas. I created the graphics on my own.  
 <br><br>
 
 Tic Tac Toe is part of the Developer Akademie's training programme for software developers (www.developerakademie.com). 
