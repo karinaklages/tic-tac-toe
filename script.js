@@ -24,8 +24,8 @@ function render() {
             let index = row * 3 + col;
             let value = fields[index];
             let symbol = "";
-            if (value === "circle") symbol = "O";
-            if (value === "cross") symbol = "+";
+            if (value === "circle") symbol = `<img src="./assets/icons/circle.svg" class="icon">`;
+            if (value === "star") symbol = `<img src="./assets/icons/star.svg" class="icon">`;
             html += `<td>${symbol}</td>`;
         }
         html += "</tr>";

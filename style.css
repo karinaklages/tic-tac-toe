@@ -12,7 +12,6 @@ body {
     justify-content: center;
     align-items: center;
     color: #2f2f2f;
-    /* background-color: #f9f9ee; */
     background-image: url('./assets/img/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,13 +39,17 @@ td {
     cursor: pointer;
 }
 
+td:hover {
+    background-color: #e84c37;
+}
+
 button {
     background-color: #2f2f2f;
     color: #f9f9ee;
     border: none;
     padding: 8px 24px;
     border-radius: 25px;
-    font-family: "Futura", Arial, sans-serif;
+    font-family: "Futura", "Open Sans", Arial, sans-serif;
     font-weight: 300;
     font-size: 16px;
     cursor: pointer;
@@ -55,4 +58,12 @@ button {
 
 button:hover {
     background-color: #3a3a3a;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
 }
