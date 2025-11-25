@@ -10,6 +10,8 @@ let fields = [
     null
 ];
 
+let currentShape = "circle";
+
 function init() {
     render();
 }
@@ -22,16 +24,37 @@ function render() {
 
         for (let col = 0; col < 3; col++) {
             let index = row * 3 + col;
-            let value = fields[index];
-            let symbol = "";
-            if (value === "circle") symbol = `<img src="./assets/icons/circle.svg" class="icon">`;
-            if (value === "star") symbol = `<img src="./assets/icons/star.svg" class="icon">`;
-            html += `<td>${symbol}</td>`;
+            html += `<td onclick="handleClick(${index}, this)"></td>`;
         }
+
         html += "</tr>";
     }
+
     html += "</table>";
     document.getElementById("content").innerHTML = html;
 }
 
-render();
+function handleClick(index, cell) {
+
+    fields[index] = currentShape;
+
+    if (currentShape === "circle") {
+        cell.innerHTML = generateCircleSVG();
+        currentShape = "star";
+    } else {
+        cell.innerHTML = generateStarSVG();
+        currentShape = "circle";
+    }
+
+    cell.onclick = null;
+}
+
+function generateCircleSVG() {
+    return `<img src="./assets/icons/circle.svg" class="icon">`;
+}
+
+function generateStarSVG() {
+    return `<img src="./assets/icons/star.svg" class="icon">`;
+}
+
+init();
