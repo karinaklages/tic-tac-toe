@@ -9,3 +9,9 @@ Tic Tac Toe is part of the Developer Akademie's training programme for software 
 <br><br>
 
 ###
+
+![Tic Tac Toe](./assets/img/tic-tac-toe-1.jpg)<br>
+
+![Tic Tac Toe](./assets/img/tic-tac-toe-2.jpg)<br>
+
+![Tic Tac Toe](./assets/img/tic-tac-toe-3.jpg)
