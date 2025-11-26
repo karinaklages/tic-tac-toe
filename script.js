@@ -1,13 +1,7 @@
 let fields = [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    null, null, null,
+    null, null, null,
+    null, null, null
 ];
 
 let currentShape = "circle";
@@ -55,6 +49,16 @@ function generateCircleSVG() {
 
 function generateStarSVG() {
     return `<img src="./assets/icons/star.svg" class="icon">`;
+}
+
+function clearGame() {
+    fields = [
+        null, null, null,
+        null, null, null,
+        null, null, null
+    ];
+    currentShape = "circle";
+    render();
 }
 
 init();
